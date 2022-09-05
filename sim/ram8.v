@@ -12,7 +12,7 @@ reg [7:0] regfile [1023:0];
 always@(posedge clock)begin
 if(wren)begin	
 	regfile[address] <= data;
-        q		 <=data;
+        q		 <= data;
 end
 else begin
 	q<= regfile[address];
